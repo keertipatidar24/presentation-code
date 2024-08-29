@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhotoGallery</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+    <h1>Image Gallery</h1>
+
+<body>
+    <div class="filter-options">
+        <button onclick="applyFilter('none')">None</button>
+        <button onclick="applyFilter('grayscale(100%)')">Grayscale</button>
+        <button onclick="applyFilter('sepia(100%)')">Sepia</button>
+        <button onclick="applyFilter('contrast(200%)')">Contrast</button>
+        <button onclick="applyFilter('blur(5px)')">Blur</button>
+        <button onclick="applyFilter('brightness(150%)')">Brightness</button>
+    </div>
+
+    <div class="full-img" id="fullImgBox">
+        <span class="close" onclick="closeFullImg()">X</span>
+        <span class="prev" onclick="prevImg()">&#10094;</span>
+        <img id="fullImg" src="" alt="Full View">
+        <div id="caption" class="caption">A Cute Baby</div>
+        <span class="next" onclick="nextImg()">&#10095;</span>
+
+        <div class="thumbnail-container"></div>
+    
+        <div class="social-share">
+            <a href="#" id="share-facebook" target="_blank">Share on Facebook</a>
+            <a href="#" id="share-twitter" target="_blank">Share on Twitter</a>
+            <a href="#" id="share-pinterest" target="_blank">Share on Pinterest</a>
+            <a href="#" id="share-instagram" target="_blank">Share on Instagram</a>
+        </div>        
+    </div>
+    
+
+    <div class="img-gallery">
+        <div class="img-wrapper">
+            <img src="cute1.jpeg" alt="Image 1" data-caption="Tiny toes and endless giggles - January 1, 2024">
+        </div>
+        <div class="img-wrapper">
+            <img src="cute2.jpeg" alt="Image 2" data-caption="A bundle of joy wrapped in cuteness - February 14, 2024">
+        </div>
+        <div class="img-wrapper">
+            <img src="cute3.jpeg" alt="Image 3" data-caption="Sweetness wrapped in a tiny bundle - March 21, 2024">
+        </div>
+        <div class="img-wrapper">
+            <img src="cute4.jpeg" alt="Image 4" data-caption="Little moments, big smiles. - April 30, 2024">
+        </div>
+        <div class="img-wrapper">
+            <img src="cute5.jpeg" alt="Image 5" data-caption="The littlest feet make the biggest footprints in our hearts - May 15, 2024">
+        </div>
+        <div class="img-wrapper">
+            <img src="cute1.jpeg" alt="Image 6" data-caption="Cuteness and smile—pure and simple - June 20, 2024">
+        </div>
+        <div class="img-wrapper">
+            <img src="cute2.jpeg" alt="Image 15 " data-caption="A tiny miracle, a heart full of love - July 25, 2024">
+        </div>
+        <div class="img-wrapper">
+            <img src="cute3.jpeg" alt="Image 13 " data-caption="Little hands, big dreams - August 10, 2024">
+        </div>
+        <div class="img-wrapper">
+            <img src="cute4.jpeg" alt="Image 14 " data-caption="Our little star shining bright - September 5, 2024">
+        </div>
+        <div class="img-wrapper">
+            <img src="cute5.jpeg" alt="Image 10" data-caption="Precious moments, priceless memories - October 12, 2024">
+        </div>
+        <div class="img-wrapper">
+            <img src="cute1.jpeg" alt="Image 11" data-caption="A world of wonder in a little one - November 18, 2024">
+        </div>
+        <div class="img-wrapper">
+            <img src="cute2.jpeg" alt="Image 12" data-caption="Sweetness wrapped in a cozy blanket - December 1, 2024">
+        </div>
+        <div class="img-wrapper">
+            <img src="cute3.jpeg" alt="Image 7 " data-caption="Pure joy in a tiny package - January 10, 2025">
+        </div>
+        <div class="img-wrapper">
+            <img src="cute4.jpeg" alt="Image 8" data-caption="Cherishing every tiny moment - February 25, 2025">
+        </div>
+        <div class="img-wrapper">
+            <img src="cute5.jpeg" alt="Image 9" data-caption="A bundle of love and laughter - March 30, 2025">
+        </div>
+        <div class="img-wrapper">
+            <img src="cute4.jpeg" alt="Image 16" data-caption="A Cute Baby - April 15, 2025">
+        </div>
+        <div class="img-wrapper">
+            <img src="cute3.jpeg" alt="Image 17" data-caption="The best things come in small, adorable packages - May 20, 2025">
+        </div>
+        <div class="img-wrapper">
+            <img src="cute2.jpeg" alt="Image 18" data-caption="Tiny fingers, endless possibilities - June 5, 2025">
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
